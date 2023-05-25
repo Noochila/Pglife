@@ -1,0 +1,30 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb py-2">
+
+        <% if(title=="Home" ){ %>
+            <li class="breadcrumb-item active">
+                <a href="/">Home</a>
+            </li>
+            <% } else if(title=="Dashboard") { %>
+                <li class="breadcrumb-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+
+                <% } else { %>
+                    <li class="breadcrumb-item">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li class="breadcrumb-item active">
+                        <a href="<%= title %>">
+                            <%= title %>
+                        </a>
+                    </li>
+                    <% } %>
+
+
+    </ol>
+</nav>

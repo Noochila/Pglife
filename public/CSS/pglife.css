@@ -1,0 +1,90 @@
+/* CSS Reset */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar-brand .img-fluid {
+    width: 30%;
+}
+.nav-link
+{
+    margin: 10px;
+}
+
+/* body */
+#body{
+    background-image:linear-gradient(rgba(0,0,0,0.5)),linear-gradient(rgba(0,0,0,1)), url(/img/bg.png);
+    height: 75vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.title
+{
+    padding-top: 10%;
+    font-size: 2.5rem;
+    /* color: #fff; */
+}
+
+
+#city
+{
+    padding: 5% 10% 5%;
+    text-align: center;
+}
+.image-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-item
+{
+    margin: 10px 200px;
+
+}
+.image-item  img{
+    width: 200px;
+}
+/* Footer */
+.footer {
+    background-color: #333333;
+    font-size: 13px;
+}
+
+.footer-container {
+    padding: 24px;
+}
+
+.footer-cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-city {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .footer-city {
+        width: 100%;
+    }
+}
+
+.footer-city a {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    color: #a9a9a9;
+    text-align: center;
+    padding-top: 24px;
+}

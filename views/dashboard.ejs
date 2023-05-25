@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+    <%- include("partials/login") %>
+        <%- include("partials/breadcrumb") %>
+            <div class="container my-5">
+                <div class="row mt-5">
+                    <div class="col-sm-5 offset-sm-2">
+                        <h1>My Profile</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-3 img-row ">
+                        <img src="/img/user.png" alt="User Image" class="usr-img">
+                    </div>
+                    <div class="col-sm-5 usr-details">
+                        <p><%= renderUser.name %></p>
+                        <p><%= renderUser.email %></p>
+                        <p><%= renderUser.phone %></p>
+                        <p><%= renderUser.college %></p>
+                    </div>
+                </div>
+                <div class="row justify-content-sm-end">
+                    <div class="col-3 offset-9">
+                        <a href="#" class="delete-profile-link" id="del-link">Delete Profile</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="page-container">
+
+                <div class="property-heading ">
+                    <h2>My Interested Properties:</h2>
+                    <hr>
+                </div>
+                <div class="no-pg mx-4 text-center">
+                    <p><span style="font-size: 2rem; ">🙅</span></p>
+                    <p>You haven't marked any PG as interested yet...</p>
+                </div>
+
+
+
+            </div>
+
+            <%- include("partials/footer") %>
