@@ -9,7 +9,7 @@ const passport = require("passport");
 const mongooseLocal = require("passport-local-mongoose");
 
 let position = 0;
-mongoose.connect("mongodb://127.0.0.1:27017/pglifeDB");
+mongoose.connect(process.env.MONGODB_URI);
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
