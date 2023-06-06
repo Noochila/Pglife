@@ -338,8 +338,8 @@ app.get("/logout", function (req, res) {
     });
 
 });
+const port=process.env.PORT || 3000
 
-
-app.listen(3000, () => {
-    console.log("servor running in port 3000")
+app.listen(port, () => {
+    console.log(`servor running in port ${port}`)
 });
